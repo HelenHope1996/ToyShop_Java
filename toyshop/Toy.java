@@ -4,13 +4,11 @@ package toyshop;
 public class Toy {
 
     int id;
-    int count;
     String name;
     double weight;
 
-    public Toy(int id, int count, String name, double weight) {
+    public Toy(int id, String name, double weight) {
         this.id = id;
-        this.count = count;
         this.name = name;
         this.weight = weight;
     }
@@ -25,6 +23,6 @@ public class Toy {
 
     @Override
     public String toString() {
-        return "Toy [id=" + id + ", count=" + count + ", name=" + name + ", weight=" + weight + "]";
+        return "Toy [id=" + id + ", name=" + name + ", weight=" + weight + "]";
     }
 }
