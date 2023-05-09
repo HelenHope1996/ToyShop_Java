@@ -20,7 +20,7 @@ public class ToyShop {
     public void saveToyForLottery() {
         Toy toy = getToyForPrice();
         String text = toy.toString();
-        try(FileWriter writer = new FileWriter("toy-shop/ToyShop/Toys.txt", true))
+        try(FileWriter writer = new FileWriter("Shop/toyshop/Toys.txt", true))
         { 
             writer.write(text);
             writer.append('\n');
